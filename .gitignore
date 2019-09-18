@@ -1,0 +1,7 @@
+# Ignore pdf files
+
+*.pdf
+
+#Ignore Design Schemes
+
+/design/*.png
