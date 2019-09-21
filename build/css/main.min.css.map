@@ -1,0 +1,1 @@
+{"version":3,"sources":["_variables.scss"],"names":[],"mappings":"AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,KAAK,GAC1B","file":"main.min.css","sourcesContent":["body {\r\n    background-color: green;\r\n}"]}

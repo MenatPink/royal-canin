@@ -5,3 +5,6 @@
 #Ignore Design Schemes
 
 /design/*.png
+
+#Node Modules
+/node_modules
