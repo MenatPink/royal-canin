@@ -1,0 +1,24 @@
+// Fonts
+@font-face {
+    font-family: 'Trade Gothic LT';
+    src: url('build/fonts/Trade Gothic LT.ttf') format('truetype');
+}
+
+$primary-font: 'Lato',
+sans-serif;
+
+// Colours
+
+//DEFAULT STYLING
+// p
+p {
+    color: rgb(51, 51, 51);
+    font-family: $primary-font;
+}
+
+//Buttons
+button {
+    background-color: white;
+    border: none;
+    font-family: $primary-font;
+}

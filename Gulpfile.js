@@ -1,5 +1,5 @@
 var gulp = require("gulp"),
-    minifyHTML = require("gulp-minify-html"),
+    htmlmin = require("gulp-htmlmin"),
     concat = require("gulp-concat"),
     uglify = require("gulp-uglify"),
     imagemin = require("gulp-imagemin"),
@@ -32,7 +32,7 @@ var gulp = require("gulp"),
 
 gulp.task("html", function () {
     return gulp.src(config.paths.html.src)
-        .pipe(minifyHTML())
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(config.paths.html.dest));
 });
 
@@ -47,10 +47,7 @@ gulp.task("scripts", function () {
 
 gulp.task("images", function () {
     return gulp.src(config.paths.images.src)
-        .pipe(imagemin({
-            progressive: true,
-            interlaced: true
-        }))
+        .pipe(imagemin())
         .pipe(gulp.dest(config.paths.images.dest));
 });
 
@@ -63,11 +60,11 @@ gulp.task("sass", function () {
         .pipe(gulp.dest(config.paths.css.dest))
 });
 
-gulp.task("build", ["html", "scripts", "sass"]);
+gulp.task("build", gulp.parallel("html", "scripts", "sass", "images"));
 
-gulp.task("default", ["build"], function () {
-    gulp.watch(config.paths.html.src, ["html"]);
-    gulp.watch(config.paths.javascript.src, ["scripts"]);
-    gulp.watch(config.paths.images.src, ["images"]);
-    gulp.watch(config.paths.sass.src, ["sass"]);
+gulp.task("default", function () {
+    gulp.watch(config.paths.html.src, gulp.series("html"));
+    gulp.watch(config.paths.javascript.src, gulp.series("scripts"));
+    gulp.watch(config.paths.images.src, gulp.series("images"));
+    gulp.watch(config.paths.sass.src, gulp.series("sass"));
 });

@@ -1,4 +1,256 @@
-body {
-  background-color: green; }
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url("build/fonts/Trade Gothic LT.ttf") format("truetype"); }
+
+p {
+  color: #333333;
+  font-family: "Lato", sans-serif; }
+
+button {
+  background-color: white;
+  border: none;
+  font-family: "Lato", sans-serif; }
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url("build/fonts/Trade Gothic LT.ttf") format("truetype"); }
+
+p {
+  color: #333333;
+  font-family: "Lato", sans-serif; }
+
+button {
+  background-color: white;
+  border: none;
+  font-family: "Lato", sans-serif; }
+
+.hero-container img {
+  width: 100%; }
+
+.hero-container .hero {
+  margin-top: -4px; }
+  .hero-container .hero p {
+    font-size: 17px;
+    padding: 10px; }
+
+.hero-container .hero-selector {
+  height: 46px;
+  background-color: #f5f5f5; }
+  .hero-container .hero-selector button {
+    padding-left: 15px;
+    padding-right: 10px;
+    height: 100%;
+    background-color: transparent;
+    color: #7d513c; }
+  .hero-container .hero-selector button.active {
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 700;
+    font-size: 1rem; }
+
+.hero-container .title-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero-container .title-logo img {
+    width: 217px;
+    margin-top: 15px;
+    margin-bottom: 31px; }
+
+.hero-container .call-to-action {
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 4px;
+  width: 150px;
+  margin: auto;
+  margin-top: 17px;
+  display: block; }
+  .hero-container .call-to-action .call-to-action-text {
+    color: black;
+    padding: 0; }
+
+.hero-container .header {
+  margin-top: 30px; }
+
+.hero-container .shop-call-to-action {
+  margin: auto;
+  width: 150px;
+  display: block;
+  background-color: #3d6a29;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px;
+  margin-top: 10px; }
+  .hero-container .shop-call-to-action .shop-call-to-action-text {
+    color: white;
+    font-size: 16px;
+    padding: 0.5em; }
+
+.hero-container .filter {
+  margin-top: 50px;
+  width: 100%; }
+  .hero-container .filter .filter-text-container {
+    background-color: #f2eeed;
+    display: inline-block;
+    width: 70%;
+    border-radius: 3px; }
+  .hero-container .filter .search-icon {
+    border-radius: 3px;
+    background-color: #f2eeed;
+    display: inline-block;
+    color: green;
+    height: 20px;
+    width: 20%; }
+
+.about .title-border {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px; }
+
+.about h1 {
+  font-family: "Trade Gothic LT", sans-serif; }
+
+.about .video {
+  width: 100%; }
+  .about .video iframe {
+    width: 100%;
+    height: auto; }
+
+
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url("build/fonts/Trade Gothic LT.ttf") format("truetype"); }
+
+p {
+  color: #333333;
+  font-family: "Lato", sans-serif; }
+
+button {
+  background-color: white;
+  border: none;
+  font-family: "Lato", sans-serif; }
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url("build/fonts/Trade Gothic LT.ttf") format("truetype"); }
+
+p {
+  color: #333333;
+  font-family: "Lato", sans-serif; }
+
+button {
+  background-color: white;
+  border: none;
+  font-family: "Lato", sans-serif; }
+
+.hero-container img {
+  width: 100%; }
+
+.hero-container .hero {
+  margin-top: -4px; }
+  .hero-container .hero p {
+    font-size: 17px;
+    padding: 10px; }
+
+.hero-container .hero-selector {
+  height: 46px;
+  background-color: #f5f5f5; }
+  .hero-container .hero-selector button {
+    padding-left: 15px;
+    padding-right: 10px;
+    height: 100%;
+    background-color: transparent;
+    color: #7d513c; }
+  .hero-container .hero-selector button.active {
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 700;
+    font-size: 1rem; }
+
+.hero-container .title-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero-container .title-logo img {
+    width: 217px;
+    margin-top: 15px;
+    margin-bottom: 31px; }
+
+.hero-container .call-to-action {
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 4px;
+  width: 150px;
+  margin: auto;
+  margin-top: 17px;
+  display: block; }
+  .hero-container .call-to-action .call-to-action-text {
+    color: black;
+    padding: 0; }
+
+.hero-container .header {
+  margin-top: 30px; }
+
+.hero-container .shop-call-to-action {
+  margin: auto;
+  width: 150px;
+  display: block;
+  background-color: #3d6a29;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px;
+  margin-top: 10px; }
+  .hero-container .shop-call-to-action .shop-call-to-action-text {
+    color: white;
+    font-size: 16px;
+    padding: 0.5em; }
+
+.hero-container .filter {
+  margin-top: 50px;
+  width: 100%; }
+  .hero-container .filter .filter-text-container {
+    background-color: #f2eeed;
+    display: inline-block;
+    width: 70%;
+    border-radius: 3px; }
+  .hero-container .filter .search-icon {
+    border-radius: 3px;
+    background-color: #f2eeed;
+    display: inline-block;
+    color: green;
+    height: 20px;
+    width: 20%; }
+
+.about .title-border {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px; }
+
+.about h1 {
+  font-family: "Trade Gothic LT", sans-serif; }
+
+.about .video {
+  width: 100%; }
+  .about .video iframe {
+    width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=main.min.css.map */
