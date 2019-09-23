@@ -5,43 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/main.min.css">
+    <script src="https://kit.fontawesome.com/d70958de15.js" crossorigin="anonymous"></script>
     <title>Royal Canin</title>
 </head>
 
 <body>
-    <section class="hero-container">
-        <img src="build/images/header-mobile.png" alt="">
+    <section class="hero-container container-fluid">
+        <img class="mobile-header" src="build/images/header-mobile.png" alt="">
+        <img class="tablet-header" src="build/images/header-tablet.png" alt="">
+        <img class="desktop-header" src="build/images/header-desktop.png" alt="Header">
         <div class="hero">
             <div class="hero-selector">
-                <button>Home</button>
+                <button><span class="link-text">Back to:</span>Home</button>
                 <button class="active">Royal Canin</button>
             </div>
-            <div class="title-logo">
-                <img src="build/images/logo.png" alt="">
+            <div class="title-logo-container row">
+                <div class="title-logo col-12 col-md-4">
+                    <img src="build/images/logo.png" alt="">
+                </div>
+                <p class="col-12 col-md-8">For over fifty years, we have focused on tailored recipes to suit the
+                    specific nutritional needs of
+                    cats
+                    and dogs. Stiving to deliver good health through nutrition is what drives us and our obsession with
+                    detail is what makes it possible for us to deliver precise, effective nutrition, helping cats and
+                    dogs
+                    thrive. To find out more about ROYAL CANIN, visit www.royalcanin.co.uk</p>
             </div>
-            <p>For over fifty years, we have focused on tailored recipes to suit the specific nutritional needs of cats
-                and dogs. Stiving to deliver good health through nutrition is what druves us and our obsession with
-                detail is what makes it possible for us to deliver precise, effective nutrition, helping cats and dogs
-                thrive. To find out more about ROYAL CANIN, visit www.royalcanin.co.uk</p>
             <button class="call-to-action">
                 <p class="call-to-action-text">
                     Read More +
                 </p>
             </button>
-            <img class="header" src="build/images/header.jpg" alt="Header Image">
-            <button class="shop-call-to-action">
-                <p class="shop-call-to-action-text">
-                    Shop Now
-                </p>
-            </button>
-            <div class="filter">
-                <div class="filter-text-container">
-                    <p>View All<span>(99)</span></p>
+            <div class="row">
+                <div class="col-12 col-md-9">
+                    <img class="header" src="build/images/header.jpg" alt="Header Image">
                 </div>
-                <div class="search-icon">
-
+                <div class="col-12 col-md-3">
+                    <button class="shop-call-to-action">
+                        <p class="shop-call-to-action-text">
+                            Shop Now
+                        </p>
+                    </button>
+                </div>
+            </div>
+            <div class="filter row">
+                <div class="dropdown show col-10">
+                    <a class="filter-dropdown btn btn-secondary dropdown-toggle" href="#" role="button"
+                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        View All <span>(99)</span>
+                    </a>
+                </div>
+                <div class="sort-icon-container col-2">
+                    <button type="button" class="sort-icon btn btn-secondary"><span
+                            class="small-screen-sort">:</span><span class="large-screen-sort">Sort</span></button>
                 </div>
             </div>
         </div>
@@ -51,7 +71,7 @@
             <h1>Health is our obsession</h1>
         </div>
         <div class="video">
-            <iframe height="415" src="https://www.youtube.com/embed/FYwO1fiYoa8" frameborder="0"
+            <iframe height="415px" src="https://www.youtube.com/embed/FYwO1fiYoa8" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -62,154 +82,236 @@
             health sensitivities of different breeds of cat and dogs; ROYAL CANIN has used science and observation to
             pioneer health through nutrition for over fifty years.</p>
     </section>
-    <section>
-        <h1></h1>
-        <img src="" alt="">
-        <h1></h1>
-        <img src="" alt="">
-        <h1></h1>
-        <img src="" alt="">
-        <h1></h1>
-        <img src="" alt="">
-        <h1></h1>
-        <img src="" alt="">
-        <h1></h1>
-        <img src="" alt="">
-        <h1></h1>
-        <img src="" alt="">
-    </section>
-    <section>
-        <h1></h1>
-        <div class="product-container">
-            <img src="" alt="">
-            <p></p>
-            <div class="rating">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-            </div>
-            <p></p>
+    <section class="product-range container">
+        <div class="title-border">
+            <h1>The Range</h1>
         </div>
-        <div class="product-container">
-            <img src="" alt="">
-            <p></p>
-            <div class="rating">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
+        <div class="row">
+            <div class="col-12 col-md-4 category-container">
+                <img src="build\images\category1.jpg" alt="DOG FOOD">
+                <div class="category-label">
+                    DOG FOOD
+                </div>
             </div>
-            <p></p>
+            <div class="col-12 col-md-4 category-container">
+                <img src="build\images\category2.jpg" alt="DOG FOOD">
+                <div class="category-label">
+                    CAT FOOD
+                </div>
+            </div>
+            <div class="col-12 col-md-4 category-container">
+                <img src="build\images\category3.jpg" alt="DOG FOOD">
+                <div class="category-label">
+                    BREED DOG FOOD
+                </div>
+            </div>
         </div>
-        <div class="product-container">
-            <img src="" alt="">
-            <p></p>
-            <div class="rating">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
+        <div class="row">
+            <div class="col-12 col-md-4 category-container">
+                <img src="build\images\category4.jpg" alt="DOG FOOD">
+                <div class="category-label">
+                    BREED CAT FOOD
+                </div>
             </div>
-            <p></p>
-        </div>
-        <div class="product-container">
-            <img src="" alt="">
-            <p></p>
-            <div class="rating">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
+            <div class="col-12 col-md-4 category-container">
+                <img src="build\images\category5.jpg" alt="DOG FOOD">
+                <div class="category-label">
+                    VET DOG FOOD
+                </div>
             </div>
-            <p></p>
+            <div class="col-12 col-md-4 category-container">
+                <img src="build\images\category6.jpg" alt="DOG FOOD">
+                <div class="category-label">
+                    VET CAT FOOD
+                </div>
+            </div>
         </div>
     </section>
-    <section>
-        <h1>Best Sellers</h1>
-        <div class="product-container">
-            <img src="" alt="">
-            <p></p>
-            <div class="rating">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-            </div>
-            <p></p>
+    <section class="brand-new-products container">
+        <div class="title-border">
+            <h1>Brand New</h1>
         </div>
-        <div class="product-container">
-            <img src="" alt="">
-            <p></p>
-            <div class="rating">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
+        <div class="row">
+            <div class="col-6 col-md-3 new-product-container">
+                <img src="build\images\471814011_0_1280x1280.jpg" alt="">
+                <div class="product-title">
+                    Royal Canin Maxi Dental Care Adult Dry Dog Food 3kg
+                </div>
+                <div class="rating-container">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                £17.22
             </div>
-            <p></p>
-        </div>
-        <div class="product-container">
-            <img src="" alt="">
-            <p></p>
-            <div class="rating">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
+            <div class="col-6 col-md-3 new-product-container">
+                <img src="build\images\471827011_0_1280x1280.jpg" alt="">
+                <div class="product-title">
+                    Royal Canin Medium Sterilised Care Adult Dry Dog Food 10kg
+                </div>
+                <div class="rating-container">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                £46.99
             </div>
-            <p></p>
-        </div>
-        <div class="product-container">
-            <img src="" alt="">
-            <p></p>
-            <div class="rating">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
+            <div class="col-6 col-md-3 new-product-container">
+                <img src="build\images\471835011_0_1280x1280.jpg" alt="">
+                <div class="product-title">
+                    Royal Canin Mini Digestive Csre Adult Dry Dog Food 8kg
+                </div>
+                <div class="rating-container">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                £40.99
             </div>
-            <p></p>
+            <div class="col-6 col-md-3 new-product-container">
+                <img src="build\images\89874011_0_1280x1280.jpg" alt="">
+                <div class="product-title">
+                    Royal Canin Persian Kitten Dry Food 4kg
+                </div>
+                <div class="rating-container five-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price-decrease">£34.49</span>
+                <span class="price-increase">£30.99</span>
+            </div>
         </div>
     </section>
-    <section>
-        <div class="footer">
-            <div class="socials-media-container">
-                <div class="social-media-container"><img src="" alt=""></div>
+    <section class="best-sellers container">
+        <div class="title-border">
+            <h1>Best Sellers</h1>
+        </div>
+        <div class="row">
+            <div class="col-6 new-product-container">
+                <img src="build\images\201748011_0_1280x1280.jpg" alt="">
+                <div class="product-title">
+                    Royal Canin Maxi Dental Care Adult Dry Dog Food 3kg
+                </div>
+                <div class="rating-container five-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                £17.22
+            </div>
+            <div class="col-6 new-product-container">
+                <img src="build\images\201748011_0_1280x1280.jpg" alt="">
+                <div class="product-title">
+                    Royal Canin Maxi Dental Care Adult Dry Dog Food 3kg
+                </div>
+                <div class="rating-container five-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                £17.22
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 new-product-container">
+                <img src="build\images\201748011_0_1280x1280.jpg" alt="">
+                <div class="product-title">
+                    Royal Canin Maxi Dental Care Adult Dry Dog Food 3kg
+                </div>
+                <div class="rating-container five-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                £17.22
+            </div>
+            <div class="col-6 new-product-container five-star">
+                <img src="build\images\201748011_0_1280x1280.jpg" alt="">
+                <div class="product-title">
+                    Royal Canin Maxi Dental Care Adult Dry Dog Food 3kg
+                </div>
+                <div class="rating-container">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                £17.22
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="socials-media-container">
+            <div class="center-group">
+
+                <div class="social-media-container"><i class="fab fa-facebook-f"></i></div>
+                <div class="social-media-container"><i class="fab fa-twitter"></i></div>
+                <div class="social-media-container"><i class="fab fa-instagram"></i></div>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact">
+                <p>Contact us
+                </p>
+                <p>Call us or send us a message</p>
+                <p>5.30am to midnight any day of the week</p>
             </div>
             <div class="links-container">
-                <div class="contact">
-                    <p></p>
-                </div>
-                <div class="links">
+
+                <div class="links links-1">
+                    <p>The Legal Bit</p>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Terms &amp; Conditions</li>
+                        <li>Security Policy</li>
+                        <li>Privacy &amp; Cookies</li>
+                        <li>Policy</li>
+                        <li>Returns Policy</li>
+                        <li>Accessibility Statement</li>
+                        <li>Modern Slavery Act</li>
+                        <li>Statement</li>
                     </ul>
+                </div>
+                <div class="links links-2">
+                    <p>Customer Service</p>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Contact us</li>
+                        <li>FAQs</li>
+                        <li>Delivery &amp; Returns</li>
+                        <li>Recycling Information</li>
+                        <li>Veterinary Medicines</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <button class="live-chat">LIVE CHAT
+        <i class="fas fa-question-circle"></i>
+    </button>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

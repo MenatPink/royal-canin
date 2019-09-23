@@ -4,38 +4,122 @@
 
 @font-face {
   font-family: 'Trade Gothic LT';
-  src: url("build/fonts/Trade Gothic LT.ttf") format("truetype"); }
-
-p {
-  color: #333333;
-  font-family: "Lato", sans-serif; }
-
-button {
-  background-color: white;
-  border: none;
-  font-family: "Lato", sans-serif; }
+  src: url("../../build/fonts/14 Trade Gothic Font Download/Trade Gothic LT.ttf") format("truetype");
+  font-weight: normal; }
 
 @font-face {
   font-family: 'Trade Gothic LT';
-  src: url("build/fonts/Trade Gothic LT.ttf") format("truetype"); }
+  src: url("../../build/fonts/14 Trade Gothic Font Download/Trade Gothic LT Bold Condensed No. 20.ttf") format("truetype");
+  font-weight: bold; }
+
+.container-fluid {
+  padding: 0; }
+
+.row {
+  margin: 0px; }
 
 p {
   color: #333333;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  margin: 0; }
 
 button {
   background-color: white;
   border: none;
   font-family: "Lato", sans-serif; }
 
-.hero-container img {
+h1 {
+  font-family: "Trade Gothic LT", sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: 700; }
+
+section {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.title-border {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px; }
+
+.five-star i {
+  color: #fdcc5e !important; }
+
+.price-decrease {
+  color: #777;
+  text-decoration: line-through; }
+
+.price-increase {
+  color: #e91e63 !important;
+  font-weight: 700 !important; }
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url("../../build/fonts/14 Trade Gothic Font Download/Trade Gothic LT.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url("../../build/fonts/14 Trade Gothic Font Download/Trade Gothic LT Bold Condensed No. 20.ttf") format("truetype");
+  font-weight: bold; }
+
+.container-fluid {
+  padding: 0; }
+
+.row {
+  margin: 0px; }
+
+p {
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  margin: 0; }
+
+button {
+  background-color: white;
+  border: none;
+  font-family: "Lato", sans-serif; }
+
+h1 {
+  font-family: "Trade Gothic LT", sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: 700; }
+
+section {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.title-border {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px; }
+
+.five-star i {
+  color: #fdcc5e !important; }
+
+.price-decrease {
+  color: #777;
+  text-decoration: line-through; }
+
+.price-increase {
+  color: #e91e63 !important;
+  font-weight: 700 !important; }
+
+.hero-container .tablet-header,
+.hero-container .desktop-header {
+  display: none;
   width: 100%; }
 
-.hero-container .hero {
-  margin-top: -4px; }
-  .hero-container .hero p {
-    font-size: 17px;
-    padding: 10px; }
+.hero-container .mobile-header {
+  width: 100%; }
+
+.hero-container .link-text {
+  display: none; }
+
+.hero-container .hero p {
+  font-size: 17px;
+  padding: 10px; }
 
 .hero-container .hero-selector {
   height: 46px;
@@ -53,15 +137,13 @@ button {
     font-weight: 700;
     font-size: 1rem; }
 
-.hero-container .title-logo {
+.hero-container .title-logo img {
+  max-width: 217px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .hero-container .title-logo img {
-    width: 217px;
-    margin-top: 15px;
-    margin-bottom: 31px; }
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 31px; }
 
 .hero-container .call-to-action {
   text-transform: uppercase;
@@ -79,7 +161,8 @@ button {
     padding: 0; }
 
 .hero-container .header {
-  margin-top: 30px; }
+  margin-top: 30px;
+  width: 100%; }
 
 .hero-container .shop-call-to-action {
   margin: auto;
@@ -96,35 +179,203 @@ button {
     padding: 0.5em; }
 
 .hero-container .filter {
-  margin-top: 50px;
-  width: 100%; }
-  .hero-container .filter .filter-text-container {
-    background-color: #f2eeed;
-    display: inline-block;
-    width: 70%;
-    border-radius: 3px; }
-  .hero-container .filter .search-icon {
-    border-radius: 3px;
-    background-color: #f2eeed;
-    display: inline-block;
-    color: green;
-    height: 20px;
-    width: 20%; }
-
-.about .title-border {
-  width: 100%;
-  border-bottom: 1px solid black;
-  margin-bottom: 10px; }
-
-.about h1 {
-  font-family: "Trade Gothic LT", sans-serif; }
-
-.about .video {
-  width: 100%; }
-  .about .video iframe {
+  margin: 0;
+  margin-top: 50px; }
+  .hero-container .filter .dropdown {
+    padding: 0px; }
+  .hero-container .filter .filter-dropdown {
     width: 100%;
-    height: auto; }
+    cursor: pointer;
+    background-color: #f2eeed;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid #ece6e4;
+    color: #333; }
+    .hero-container .filter .filter-dropdown span {
+      color: #777777;
+      font-style: normal;
+      font-weight: 300; }
+  .hero-container .filter a {
+    text-align: left;
+    position: relative; }
+    .hero-container .filter a:after {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(119, 119, 119, 0.26); }
+  .hero-container .filter .sort-icon-container {
+    padding-right: 0px; }
+    .hero-container .filter .sort-icon-container .sort-icon {
+      position: relative;
+      width: 100%;
+      border: none;
+      color: black;
+      background-color: #f2eeed;
+      font-size: 35px;
+      font-weight: 700;
+      max-height: 38px;
+      overflow: hidden;
+      vertical-align: top;
+      height: 38px;
+      border-bottom: 2px solid #ece6e4; }
+    .hero-container .filter .sort-icon-container .small-screen-sort {
+      position: absolute;
+      top: -10px;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%); }
+    .hero-container .filter .sort-icon-container .large-screen-sort {
+      font-weight: 400;
+      font-size: 14px;
+      position: absolute;
+      top: 10px;
+      display: none; }
 
+.about {
+  margin-top: 20px; }
+  .about .video {
+    width: 100%; }
+    .about .video iframe {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px black solid; }
+  .about p {
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 300; }
+
+.product-range {
+  margin-top: 20px; }
+  .product-range .category-container img {
+    width: 100%; }
+  .product-range .category-container .category-label {
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    background: #333031;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 5px; }
+
+.brand-new-products {
+  margin-top: 20px;
+  padding: 0px; }
+
+.new-product-container img {
+  width: 100%; }
+
+.new-product-container .product-title {
+  font-size: 14px; }
+
+.new-product-container .rating-container {
+  margin: auto;
+  margin-top: 20px;
+  width: 120px; }
+
+.new-product-container i {
+  color: #e6e4de; }
+
+.footer {
+  margin-top: 90px;
+  padding: 0; }
+  .footer .socials-media-container {
+    background-color: #f1eeec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px; }
+    .footer .socials-media-container .center-group {
+      display: flex;
+      width: 150px;
+      justify-content: space-between; }
+    .footer .socials-media-container .social-media-container {
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer; }
+      .footer .socials-media-container .social-media-container i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #7d513c; }
+  .footer .contact {
+    width: 100%;
+    margin-top: 30px; }
+    .footer .contact p {
+      width: 100%;
+      text-align: center;
+      line-height: 1.2; }
+    .footer .contact p:nth-of-type(1) {
+      color: #777;
+      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px; }
+    .footer .contact p:nth-of-type(2) {
+      color: #7d513c;
+      font-weight: 400;
+      font-size: 16px; }
+    .footer .contact p:nth-of-type(3) {
+      font-size: 11px; }
+  .footer .links-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around; }
+  .footer ul {
+    margin-top: 10px; }
+    .footer ul li {
+      color: #7d513c;
+      list-style-type: none;
+      font-size: 14px; }
+
+.live-chat {
+  position: fixed;
+  bottom: 130px;
+  right: 10px;
+  background-color: #579b38;
+  height: 40px;
+  width: 110px;
+  font-size: 12px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  font-weight: 700;
+  color: white;
+  transform: rotate(-90deg); }
+  .live-chat i {
+    padding-left: 5px; }
+
+@media only screen and (min-width: 640px) {
+  .hero-container .mobile-header {
+    display: none; }
+  .hero-container .tablet-header {
+    display: block; }
+  .hero-container .link-text {
+    display: inline-block;
+    color: black;
+    padding-right: 30px; }
+  .hero-container .title-logo-container {
+    margin-top: 30px; }
+  .hero-container .call-to-action {
+    display: none; }
+  .hero-container .shop-call-to-action {
+    margin-top: 70px; }
+  .hero-container .small-screen-sort {
+    display: none; }
+  .hero-container .hero-container .filter .sort-icon-container .large-screen-sort {
+    display: block; } }
+
+@media only screen and (min-width: 1000px) {
+  .hero-container .tablet-header {
+    display: none; }
+  .hero-container .desktop-header {
+    display: block; } }
 
 * {
   margin: 0;
@@ -132,38 +383,122 @@ button {
 
 @font-face {
   font-family: 'Trade Gothic LT';
-  src: url("build/fonts/Trade Gothic LT.ttf") format("truetype"); }
-
-p {
-  color: #333333;
-  font-family: "Lato", sans-serif; }
-
-button {
-  background-color: white;
-  border: none;
-  font-family: "Lato", sans-serif; }
+  src: url("../../build/fonts/14 Trade Gothic Font Download/Trade Gothic LT.ttf") format("truetype");
+  font-weight: normal; }
 
 @font-face {
   font-family: 'Trade Gothic LT';
-  src: url("build/fonts/Trade Gothic LT.ttf") format("truetype"); }
+  src: url("../../build/fonts/14 Trade Gothic Font Download/Trade Gothic LT Bold Condensed No. 20.ttf") format("truetype");
+  font-weight: bold; }
+
+.container-fluid {
+  padding: 0; }
+
+.row {
+  margin: 0px; }
 
 p {
   color: #333333;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  margin: 0; }
 
 button {
   background-color: white;
   border: none;
   font-family: "Lato", sans-serif; }
 
-.hero-container img {
+h1 {
+  font-family: "Trade Gothic LT", sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: 700; }
+
+section {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.title-border {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px; }
+
+.five-star i {
+  color: #fdcc5e !important; }
+
+.price-decrease {
+  color: #777;
+  text-decoration: line-through; }
+
+.price-increase {
+  color: #e91e63 !important;
+  font-weight: 700 !important; }
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url("../../build/fonts/14 Trade Gothic Font Download/Trade Gothic LT.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url("../../build/fonts/14 Trade Gothic Font Download/Trade Gothic LT Bold Condensed No. 20.ttf") format("truetype");
+  font-weight: bold; }
+
+.container-fluid {
+  padding: 0; }
+
+.row {
+  margin: 0px; }
+
+p {
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  margin: 0; }
+
+button {
+  background-color: white;
+  border: none;
+  font-family: "Lato", sans-serif; }
+
+h1 {
+  font-family: "Trade Gothic LT", sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: 700; }
+
+section {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.title-border {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px; }
+
+.five-star i {
+  color: #fdcc5e !important; }
+
+.price-decrease {
+  color: #777;
+  text-decoration: line-through; }
+
+.price-increase {
+  color: #e91e63 !important;
+  font-weight: 700 !important; }
+
+.hero-container .tablet-header,
+.hero-container .desktop-header {
+  display: none;
   width: 100%; }
 
-.hero-container .hero {
-  margin-top: -4px; }
-  .hero-container .hero p {
-    font-size: 17px;
-    padding: 10px; }
+.hero-container .mobile-header {
+  width: 100%; }
+
+.hero-container .link-text {
+  display: none; }
+
+.hero-container .hero p {
+  font-size: 17px;
+  padding: 10px; }
 
 .hero-container .hero-selector {
   height: 46px;
@@ -181,15 +516,13 @@ button {
     font-weight: 700;
     font-size: 1rem; }
 
-.hero-container .title-logo {
+.hero-container .title-logo img {
+  max-width: 217px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .hero-container .title-logo img {
-    width: 217px;
-    margin-top: 15px;
-    margin-bottom: 31px; }
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 31px; }
 
 .hero-container .call-to-action {
   text-transform: uppercase;
@@ -207,7 +540,8 @@ button {
     padding: 0; }
 
 .hero-container .header {
-  margin-top: 30px; }
+  margin-top: 30px;
+  width: 100%; }
 
 .hero-container .shop-call-to-action {
   margin: auto;
@@ -224,33 +558,202 @@ button {
     padding: 0.5em; }
 
 .hero-container .filter {
-  margin-top: 50px;
-  width: 100%; }
-  .hero-container .filter .filter-text-container {
-    background-color: #f2eeed;
-    display: inline-block;
-    width: 70%;
-    border-radius: 3px; }
-  .hero-container .filter .search-icon {
-    border-radius: 3px;
-    background-color: #f2eeed;
-    display: inline-block;
-    color: green;
-    height: 20px;
-    width: 20%; }
-
-.about .title-border {
-  width: 100%;
-  border-bottom: 1px solid black;
-  margin-bottom: 10px; }
-
-.about h1 {
-  font-family: "Trade Gothic LT", sans-serif; }
-
-.about .video {
-  width: 100%; }
-  .about .video iframe {
+  margin: 0;
+  margin-top: 50px; }
+  .hero-container .filter .dropdown {
+    padding: 0px; }
+  .hero-container .filter .filter-dropdown {
     width: 100%;
-    height: auto; }
+    cursor: pointer;
+    background-color: #f2eeed;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid #ece6e4;
+    color: #333; }
+    .hero-container .filter .filter-dropdown span {
+      color: #777777;
+      font-style: normal;
+      font-weight: 300; }
+  .hero-container .filter a {
+    text-align: left;
+    position: relative; }
+    .hero-container .filter a:after {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(119, 119, 119, 0.26); }
+  .hero-container .filter .sort-icon-container {
+    padding-right: 0px; }
+    .hero-container .filter .sort-icon-container .sort-icon {
+      position: relative;
+      width: 100%;
+      border: none;
+      color: black;
+      background-color: #f2eeed;
+      font-size: 35px;
+      font-weight: 700;
+      max-height: 38px;
+      overflow: hidden;
+      vertical-align: top;
+      height: 38px;
+      border-bottom: 2px solid #ece6e4; }
+    .hero-container .filter .sort-icon-container .small-screen-sort {
+      position: absolute;
+      top: -10px;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%); }
+    .hero-container .filter .sort-icon-container .large-screen-sort {
+      font-weight: 400;
+      font-size: 14px;
+      position: absolute;
+      top: 10px;
+      display: none; }
+
+.about {
+  margin-top: 20px; }
+  .about .video {
+    width: 100%; }
+    .about .video iframe {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px black solid; }
+  .about p {
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 300; }
+
+.product-range {
+  margin-top: 20px; }
+  .product-range .category-container img {
+    width: 100%; }
+  .product-range .category-container .category-label {
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    background: #333031;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 5px; }
+
+.brand-new-products {
+  margin-top: 20px;
+  padding: 0px; }
+
+.new-product-container img {
+  width: 100%; }
+
+.new-product-container .product-title {
+  font-size: 14px; }
+
+.new-product-container .rating-container {
+  margin: auto;
+  margin-top: 20px;
+  width: 120px; }
+
+.new-product-container i {
+  color: #e6e4de; }
+
+.footer {
+  margin-top: 90px;
+  padding: 0; }
+  .footer .socials-media-container {
+    background-color: #f1eeec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px; }
+    .footer .socials-media-container .center-group {
+      display: flex;
+      width: 150px;
+      justify-content: space-between; }
+    .footer .socials-media-container .social-media-container {
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer; }
+      .footer .socials-media-container .social-media-container i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #7d513c; }
+  .footer .contact {
+    width: 100%;
+    margin-top: 30px; }
+    .footer .contact p {
+      width: 100%;
+      text-align: center;
+      line-height: 1.2; }
+    .footer .contact p:nth-of-type(1) {
+      color: #777;
+      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px; }
+    .footer .contact p:nth-of-type(2) {
+      color: #7d513c;
+      font-weight: 400;
+      font-size: 16px; }
+    .footer .contact p:nth-of-type(3) {
+      font-size: 11px; }
+  .footer .links-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around; }
+  .footer ul {
+    margin-top: 10px; }
+    .footer ul li {
+      color: #7d513c;
+      list-style-type: none;
+      font-size: 14px; }
+
+.live-chat {
+  position: fixed;
+  bottom: 130px;
+  right: 10px;
+  background-color: #579b38;
+  height: 40px;
+  width: 110px;
+  font-size: 12px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  font-weight: 700;
+  color: white;
+  transform: rotate(-90deg); }
+  .live-chat i {
+    padding-left: 5px; }
+
+@media only screen and (min-width: 640px) {
+  .hero-container .mobile-header {
+    display: none; }
+  .hero-container .tablet-header {
+    display: block; }
+  .hero-container .link-text {
+    display: inline-block;
+    color: black;
+    padding-right: 30px; }
+  .hero-container .title-logo-container {
+    margin-top: 30px; }
+  .hero-container .call-to-action {
+    display: none; }
+  .hero-container .shop-call-to-action {
+    margin-top: 70px; }
+  .hero-container .small-screen-sort {
+    display: none; }
+  .hero-container .hero-container .filter .sort-icon-container .large-screen-sort {
+    display: block; } }
+
+@media only screen and (min-width: 1000px) {
+  .hero-container .tablet-header {
+    display: none; }
+  .hero-container .desktop-header {
+    display: block; } }
 
 /*# sourceMappingURL=main.min.css.map */

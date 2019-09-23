@@ -1,0 +1,51 @@
+@media only screen and (min-width:640px) {
+    .hero-container {
+        .mobile-header {
+            display: none;
+        }
+
+        .tablet-header {
+            display: block;
+        }
+
+        .link-text {
+            display: inline-block;
+            color: black;
+            padding-right: 30px;
+        }
+
+        .title-logo-container {
+            margin-top: 30px;
+        }
+
+        .call-to-action {
+            display: none;
+        }
+
+        .shop-call-to-action {
+            margin-top: 70px;
+        }
+
+        .small-screen-sort {
+            display: none;
+        }
+
+        .hero-container .filter .sort-icon-container .large-screen-sort {
+            display: block;
+        }
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+    .hero-container {
+        .tablet-header {
+            display: none;
+        }
+
+        .desktop-header {
+            display: block
+        }
+
+    }
+}
